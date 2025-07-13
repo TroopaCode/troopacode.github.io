@@ -14,8 +14,7 @@ Este sitio web está desarrollado en HTML y CSS con un enfoque minimalista. Aqu�
 ## 🌐 Enlace en línea
 
 Puedes ver el sitio publicado en GitHub Pages aquí:  
-👉 [https://troopacode.github.io/mi-portafolio](https://troopacode.github.io/mi-portafolio)  
-*(Reemplaza `tuusuario` por tu nombre de usuario de GitHub)*
+👉 [https://troopacode.github.io/mi-portafolio](https://troopacode.github.io/mi-portafolio)
 
 ## 🚀 Tecnologías usadas
 
@@ -28,7 +27,7 @@ Puedes ver el sitio publicado en GitHub Pages aquí:
 Si te interesa colaborar o simplemente saludar, puedes encontrarme en:
 
 - [YouTube](https://youtube.com/@UC2wxYAoBS_fXMxm1Dw-ikIg)
-- [GitHub](https://github.com/)
+- [GitHub](https://github.com/TroopaCode)
 - [Twitter](https://twitter.com/)
 
 ---
