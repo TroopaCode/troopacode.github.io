@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gerardo Viveros - Portafolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXqjn8qENf9YzSmHZ9LZJmXUEPzV52VfS8Rw+h8+Nxzk7TkHSvQxlYx2vFEOgvqBrM1Djyyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root {
       --bg: #f9f9f9;
       --text: #222;
       --primary: #005f73;
       --accent: #0a9396;
+    }
+
+    * {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -37,6 +42,14 @@
       padding: 2rem;
       max-width: 800px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     h1, h2 {
@@ -66,8 +79,13 @@
 
     .social a {
       color: var(--accent);
-      font-weight: bold;
+      font-size: 1.5rem;
       text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -114,14 +132,33 @@
     <h2>Contacto</h2>
     <p>¿Quieres colaborar o contactarme? Aquí están mis redes:</p>
     <div class="social">
-      <a href="https://youtube.com/@UC2wxYAoBS_fXMxm1Dw-ikIg" target="_blank">YouTube</a>
-      <a href="https://github.com/" target="_blank">GitHub</a>
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
+      <a href="https://youtube.com/@UC2wxYAoBS_fXMxm1Dw-ikIg" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://github.com/TroopaCode" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Gerardo Viveros</p>
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
