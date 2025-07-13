@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerardo Viveros - Portafolio</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #222;
+      --primary: #005f73;
+      --accent: #0a9396;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--primary);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social a {
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gerardo Viveros</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Hola, soy Gerardo, un entusiasta del piano, la programación y la creación de contenido. Este es mi portafolio personal.</p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy ingeniero computacional y creador de tutoriales en YouTube. Me apasiona enseñar, crear música y aprender constantemente. ¡Bienvenido a mi espacio web!</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Tutoriales de Piano</h3>
+        <p>Canal de YouTube con tutoriales visuales usando Synthesia.</p>
+      </div>
+      <div class="card">
+        <h3>Curso de Piano para Principiantes</h3>
+        <p>En desarrollo, enfocado en quienes inician desde cero.</p>
+      </div>
+      <div class="card">
+        <h3>Proyectos de Programación</h3>
+        <p>Pequeñas apps y herramientas hechas en Java, C# y web.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres colaborar o contactarme? Aquí están mis redes:</p>
+    <div class="social">
+      <a href="https://youtube.com/@UC2wxYAoBS_fXMxm1Dw-ikIg" target="_blank">YouTube</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gerardo Viveros</p>
+  </footer>
+</body>
+</html>
